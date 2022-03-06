@@ -38,8 +38,17 @@ const renderGroup = (elems: any[], name: string) => {
         .map(
           (elem) => `
         <li style="margin-bottom: 0.5rem;">
-          ${elem.name || name}<span style="opacity: 0.7;"> (
-            ${elem.inputs.map((i: any) => `${i.name}: ${i.type}`).join(', ')}
+          ${elem.name || name}
+          <span style="opacity: 0.7;"> (${elem.inputs
+            .map(
+              (i: any) => `
+              ${i.name}:
+              <span style="opacity: 0.5;">
+              ${i.type}
+              </span>
+            `
+            )
+            .join(', ')}
           )</span>
         </li>
       `
