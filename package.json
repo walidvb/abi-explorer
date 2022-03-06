@@ -2,6 +2,7 @@
   "name": "abi-explorer",
   "displayName": "abi-explorer",
   "description": "A simple yet better way to view ABI files",
+  "repository": "https://github.com/walidvb/abi-explore",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.65.0"
